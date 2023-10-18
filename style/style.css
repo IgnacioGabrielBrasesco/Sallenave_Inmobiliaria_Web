@@ -10,31 +10,15 @@ body{
     background-image: url(../img/FondoCasas.jpg);
     width: 100%;    
     font-family: serif;
-
+    
 }
-
-
-/*.container{    
-    display: flex;        
-    display: grid;
-    grid-template-columns: auto auto auto;
-    
-    
-    /*background: rgb(214,198,196);
-    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);    
-    */
-    
-   /* width: 100%;
-    
-}*/
-
 
 nav{
     position: fixed;
     grid-column: 1/3;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 80px;
     width: 100%;
     background-color: #D9D9D9;
@@ -58,16 +42,6 @@ header{
 }
 
 
-.imgLogoNavbar{   
-    display: flex;
-    align-self: flex-start;
-    height: 100%;
-    float: left;
-    margin-left: 3%;
-    
-}
-
-
 .buttonNavbar{    
     color: #2C3039;
     font-size: 1.5rem;   
@@ -80,8 +54,12 @@ button{
     border: none;
     background:none;
     padding: 5px 20px;
-    /*box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);*/
     font-size: 1.2rem;
+}
+
+.imgLogoNavbar{   
+    display: flex;
+    height: 100%;    
 }
 
 
@@ -109,10 +87,7 @@ button{
 main{
     display: flex;        
     display: grid;
-    grid-template-columns: auto auto auto;   
-    /*background: rgb(214,198,196);
-    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);    
-    */    
+    grid-template-columns: auto auto auto;
     width: 100%;
     grid-column: 1/10;
 
@@ -122,14 +97,9 @@ main{
 section{
     margin-top: 140px;
     
+       
 }
 
-
-/*.sectionBienvenida{
-    background-image: url("LlaveDePortada.png");
-    
-}
-*/
 
 .buttonComercializaTuProp{
     color: white;
