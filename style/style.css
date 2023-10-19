@@ -87,6 +87,7 @@ main{
     /* grid-template-columns: auto auto auto; */
     width: 100%;
     grid-column: 1/10;
+    height: 70vh;
 }
 
 
@@ -157,6 +158,7 @@ h1{
     position: relative;
     z-index: 5;
     text-align: center;
+    
 }
 
 
@@ -192,23 +194,35 @@ a{
 }
 
 footer input{
-    width: 100%;
+    width: 90%;
 }
 
 .mapa{
-    width: 100% ;
+    width: 90% ;
     height: 250px;
     margin: 10px 0px;
     padding: 0px 0px;
+    box-shadow: 2px 2px 2px 2px rgba(32,32,32,0.2);
+    
 }
 
 footer input{
     padding: 5px;
     margin: 10px 0px;
+    
 }
 
 footer textarea{
-    width: 100%;
+    width: 90%;
     padding: 5px;
     margin: 10px 0px;
+    
+}
+
+.submit{
+    box-shadow: 2px 2px 2px 2px rgba(32,32,32,0.2);
+}
+
+footer h2{
+    margin: 20px 0px;
 }
