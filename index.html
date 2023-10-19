@@ -26,19 +26,57 @@
       <!--inicio del navbar-->
 
       <nav>
+        <a href="#" class="buttonNavbar imgLogoNavbar">                    
+              <img
+                src="img/SallenaveInmobiliariaLogotipo.png"
+                class="imgLogoNavbar buttonNavbar"
+                alt="Inmobiliaria Sallenave"
+              />
+        </a>
 
-         <button class="buttonNavbar imgLogoNavbar">
-          <img
-            src="img/SallenaveInmobiliariaLogotipo.png"
-            class="imgLogoNavbar buttonNavbar"
-            alt="Inmobiliaria Sallenave"
-          />
-        </button>        
-        <button class="buttonNavbar">nosotros</button>        
-        <button class="buttonNavbar">servicios</button>        
-        <button class="buttonNavbar">venta</button>        
-        <button class="buttonNavbar">alquiler</button>        
-        <button class="buttonNavbar">contacto</button>
+        <ul>
+          <li>
+            <a href="#">
+              <button class="buttonNavbar">nosotros</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <button class="buttonNavbar">servicios</button>
+            </a>
+          </li>
+          <li>
+            <button class="buttonNavbar">
+              <select name="" id="">
+                <option value="0">venta</option>
+                <a href="#">
+                  <option value="1">casa</option>
+                </a>
+                <a href="#">
+                  <option value="2">departamento</option>
+                </a>
+                <a href="#">
+                  <option value="3">terreno</option>
+                </a>
+                <a href="#">
+                  <option value="4">galpón</option>
+                </a>
+              </select>
+            </button>
+          </li>
+          <li>
+            <button class="buttonNavbar">
+              <select name="" id="">
+                <option value="0">alquiler</option>
+                <option value="1">casa</option>
+                <option value="2">departamento</option>                      
+              </select>
+            </button>
+          </li>
+          <li>
+            <button class="buttonNavbar">contacto</button>
+          </li>
+        </ul>
 
       </nav>
 
@@ -70,27 +108,15 @@
           <!--acá inicia la sección de texto de binvenida-->
           <div class="encuadreTextosBienvenida">
             <article class="textosBienvenida">
-              <h2>Bienvenidos a</h2>
-              <h1>Inmobiliaria Sallenave</h1>
-              <br /><br />
-              <p>
-                Gracias por confiar en nosotros. 
-              <br />
-                ¡Estamos encantados de poder ayudarte!
-              </p>
-              <br /><br />              
-              <button class="buttonComercializaTuProp">
-                  Si querés comercializar tu propiedad hace clic acá
-              </button>
-              
-
-              <br />
-              <br />
-
+              <h1>Bienvenidos a Inmobiliaria Sallenave</h1>
+              <p>¿Que operación queres realizar?</p>
+              <a href="#">
+                <button class="buttonComercializaTuProp">
+                Quiero comercializar mi propiedad
+                </button>
+              </a>
               <p>O mirá a continuación nuestras</p>
-
               <h2>Propiedades destacadas</h2>
-
             </article>
           </div>
 
@@ -132,17 +158,17 @@
 
             <label for="comentario">Consulta
             </label>
-            <input
-              type="comentario"
-              name="grupo"
-              id="contraseña"
-              placeholder="dejanos tu consulta aquí"
-            />
+            <textarea name="comentario" id="comentario" required="" rows="5" cols="48">            
+
+            </textarea>
 
             <br />
 
             <input type="submit" name="" id="" />
           </div>
+          
+          <p>Visitanos en nuestras oficinas</p>
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.4831917291326!2d-60.529113024678615!3d-31.730009574118665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4527a2e707757%3A0x8bad3ce53daa643d!2sRosario%20del%20Tala%20172%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1682618192562!5m2!1ses!2sar"></iframe>
         </fieldset>
       </footer>
 
