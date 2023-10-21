@@ -4,13 +4,12 @@
 }
 
 body{
-    /*background: rgb(214,198,196);
+    /* background: rgb(214,198,196);
     background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
     */
     background-image: url(../img/FondoCasas.jpg);
     width: 100%;    
-    font-family: serif;
-    
+    font-family: serif;    
 }
 
 nav{
@@ -26,7 +25,6 @@ nav{
     z-index: 10;
 }
 
-
 header{
     position: fixed;
     grid-column: 1/3;
@@ -40,13 +38,11 @@ header{
     z-index: 10;   
 }
 
-
 .buttonNavbar{    
     color: #2C3039;
     font-size: 1.2rem;   
     border: none;
 }
-
 
 button{
     border: none;
@@ -57,10 +53,8 @@ button{
 
 .imgLogoNavbar{   
     height: 100%; 
-    margin-left: 10px;
-    
+    margin-left: 10px;    
 }
-
 
 .buttonHeader{    
     color: white;
@@ -69,12 +63,10 @@ button{
     border: none;
 }
 
-
 .icon{
     color: #D9D9D9;
     font-size: large;
 }
-
 
 .iconoWhatsapp{
     height: 20px;
@@ -84,17 +76,13 @@ button{
 main{
     display: flex;        
     display: grid;
-    /* grid-template-columns: auto auto auto; */
     width: 100%;
-    grid-column: 1/10;
-    height: 120vh;    
+    grid-column: 1/10;        
 }
-
 
 section{
     margin-top: 140px;
 }
-
 
 article{
     display: flex;
@@ -102,7 +90,6 @@ article{
     align-items: center;
     flex-direction: column;
 }
-
 
 .buttonComercializaTuProp{
     display: flex;
@@ -113,8 +100,8 @@ article{
     border-radius: 20px;
     font-size: 1.5rem;
     padding: 4px 22px;
-    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
-    
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+    width: 100%;    
 }
 
 main section article a{
@@ -123,9 +110,7 @@ main section article a{
     align-items: center;
     width: 90%;
     margin-bottom: 20px;
-
 }
-
 
 footer{
     display: flex;
@@ -133,7 +118,6 @@ footer{
     justify-content: center;
     align-items: center;
     grid-column: 1/10;
-    /* height: 300px; */
     width: 100%;
     background-color: #6B3638;
     color: white;
@@ -148,9 +132,13 @@ h2{
     position: relative;
     z-index: 5;
     text-align: center;
-    font-weight: bold;
+    font-weight: bold;   
+    color: #2C3039; 
 }
 
+footer h2{
+    color: white;
+}
 
 h1{
     display: flex;
@@ -161,9 +149,8 @@ h1{
     z-index: 5;
     text-align: center;
     margin-top: 20px;
-    
+    color: #2C3039;    
 }
-
 
 p{
     display: flex;
@@ -175,7 +162,6 @@ p{
     margin-bottom: 25px;
 }
 
-
 .imgDePortadaBienvenida{    
     object-fit: cover;    
     right: 0;
@@ -183,7 +169,6 @@ p{
     z-index: 1;
     width: 30rem;
 }
-
 
 nav ul{    
     position: relative;
@@ -197,35 +182,31 @@ nav i{
     font-size: 50px;
     margin-right: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 a{
     text-decoration: none;
 }
 
-
 .mapa{
     width: 90% ;
     height: 250px;
     margin: 10px 0px;
     padding: 0px 0px;
-    box-shadow: 2px 2px 2px 2px rgba(32,32,32,0.2);
-    
+    box-shadow: 2px 2px 2px 2px rgba(32,32,32,0.2);    
 }
 
 footer input{
     width: 90%;
     padding: 5px;
-    margin: 10px 0px;
-    
+    margin: 10px 0px;    
 }
 
 footer textarea{
     width: 90%;
     padding: 5px;
-    margin: 10px 0px;
-    
+    margin: 10px 0px;    
 }
 
 .submit{
@@ -245,8 +226,6 @@ main form{
     width: 90%;
     margin-bottom: 25px;
     padding-bottom: 25px;
-    /* border-radius: 5px; */
-
 }
 
 main form p{
@@ -259,8 +238,6 @@ select{
     align-items: center;
     width: 90%;
     height: 40px;
-    
-
 }
 
 main form input{
@@ -268,3 +245,75 @@ main form input{
     margin: 50px 0px 20px 0px;
     height: 40px;
 }
+
+/* estas son las clases de las cards de la seccion destacadas */
+article figure{
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+figure img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    font-weight: bold;   
+    color: #2C3039; 
+}
+
+.destacadas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(214,198,196);
+    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
+}
+
+h2{
+    padding-top: 30px;
+}
+
+.cardDestacada{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: solid 1px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+
+}
+
+.contenidoCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section article div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40px;
+    background-color: #73914E;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1rem;
+}
+
