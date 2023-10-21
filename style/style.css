@@ -279,6 +279,7 @@ h3{
     flex-direction: column;
     background: rgb(214,198,196);
     background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
+    margin-top: 10px;
 }
 
 h2{
