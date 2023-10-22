@@ -52,8 +52,7 @@ button{
 }
 
 .imgLogoNavbar{   
-    height: 100%; 
-    /* margin-left: 10px;     */
+    height: 100%;     
 }
 
 .buttonHeader{    
@@ -112,12 +111,7 @@ main section article a{
     margin-bottom: 20px;
 }
 
-footer{
-    display: flex;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1/10;
+footer{ 
     width: 100%;
     background-color: #6B3638;
     color: white;
@@ -179,8 +173,7 @@ nav ul{
 
 nav i{
     display: flex;
-    font-size: 50px;
-    /* margin-right: 10px; */
+    font-size: 50px;    
     justify-content: center;
     align-items: center;    
 }
@@ -233,9 +226,7 @@ main form div{
     align-items: center;
     flex-direction: column;
     background-color: #2C3039;
-    width: 100%;
-    /* margin-bottom: 25px;
-    padding-bottom: 25px; */
+    width: 100%;    
 }
 
 main form p{
@@ -243,11 +234,12 @@ main form p{
     margin-top: 20px;
 }
 
-select{
+main select{
     justify-content: center;
     align-items: center;
     width: 90%;
     height: 40px;
+    font-size: 1.1rem;    
 }
 
 main form input{
@@ -256,7 +248,7 @@ main form input{
     height: 40px;
 }
 
-/* estas son las clases de las cards de la seccion destacadas */
+
 article figure{
     display: flex;
     width: 90%;
@@ -331,8 +323,7 @@ main section article div a{
 
 nav select{
     border: none;    
-    background: none;
-    
+    background: none;    
 }
 
 .tituloDestacadas{
@@ -340,6 +331,10 @@ nav select{
     background: rgb(214,198,196);
     background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
     padding-bottom: 10px;
+}
+
+option{
+    font-size: 1.2rem;
 }
 
 
@@ -365,15 +360,12 @@ nav select{
         
     }
 
-    main form{
-        
+    main form{        
         align-items: end;
         flex-direction: row;
         background-color: #2C3039;
         width: 90%;
-        padding: 20px;
-        /* margin-bottom: 25px;
-        padding-bottom: 25px; */
+        padding: 20px;        
     }
 
     main form input{
@@ -381,18 +373,44 @@ nav select{
         margin: 0px;               
     }
 
-    .buttonComercializaTuProp{          
-        
+    .buttonComercializaTuProp{               
         background-color: #73914E;
         border-radius: 20px;
         font-size: 1.6rem;
         padding: 4px 22px;
         box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
-        width: 100%;   
-         
+        width: 100%;
     }
     
+    footer div{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;        
+    }
 
+    .mapa{
+        width: 75%;
+        height: 405px;
+    }
+
+    .formularioFooter{
+        float: left;        
+    }
+    
+    .lineasTelefonicas{
+        float: left;
+    }
+
+    .contactoEmail{
+        margin-bottom: 100px;
+    }
+
+    .lineasTelefonicas{
+        margin-bottom: 100px;
+    }
+    
 }
 
 @media(min-width: 860px){
