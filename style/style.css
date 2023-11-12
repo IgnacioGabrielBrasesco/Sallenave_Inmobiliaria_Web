@@ -431,6 +431,21 @@ option{
     margin: 25px;
 }
 
+.mainAlquiler{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 200px; 
+    color: #6B3638;
+}
+
+.igAlquiler{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: #6B3638;     
+}
+
 @media(max-width: 280px){
     .imgLogoNavbar{
         width: 100%;
