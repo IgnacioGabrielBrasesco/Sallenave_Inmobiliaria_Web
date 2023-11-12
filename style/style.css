@@ -5,9 +5,10 @@
 
 body{
     /* background: rgb(214,198,196);
-    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
-    */
-    background-image: url(../img/FondoCasas.jpg);
+    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%); */
+   
+    /* background-image: url(../img/FondoCasas.jpg); */
+    background-color: #DCE2E2;
     width: 100%;    
     font-family: serif;    
 }
@@ -19,7 +20,8 @@ nav{
     justify-content: space-between;
     height: 80px;
     width: 100%;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    background-color: #DCE2E2;
     padding: 1% 5%;    
     z-index: 10;
 }
@@ -153,7 +155,8 @@ p{
     position: relative;
     z-index: 5;
     text-align: center;
-    margin-bottom: 25px;
+    /* margin: 5%; */
+    
 }
 
 .imgDePortadaBienvenida{    
@@ -371,6 +374,41 @@ option{
     font-size: 1.2rem;
 }
 
+.tituloServicios{
+    padding-bottom: 25px;
+    top: 0;
+}
+
+.tituloServicio{
+    padding: 0px 5%;       
+    color: white;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;    
+    margin-top: 0px;
+}
+
+.servicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px;
+    border-radius: 20px;
+    background-color: #6B3638;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.9);   
+    margin: 25px 15%;
+    opacity: 95%;
+}
+
+.imgServicios{
+    display: flex;    
+    width: 70%;
+}
 
 @media(max-width: 280px){
     .imgLogoNavbar{
@@ -384,7 +422,27 @@ option{
 
 }
 
+@media(min-width: 514px){
+    .servicios{
+        display: grid;
+        grid-template-columns: auto auto;        
+    }    
+
+}
+
+
 @media(min-width: 768px){
+
+    .servicio{
+        margin: 20px;        
+    }
+
+    .servicios{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+   
     /* nav ul{  
         display: flex;
         list-style: none;
@@ -481,10 +539,35 @@ option{
         margin-top: 0px;
         margin-bottom: 60px;
     } */
+    .buttonComercializaTuProp{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
     
 }
 
 @media(min-width: 860px){
+
+    .servicio{
+        margin: 20px;
+        width: 200px;        
+    }
+
+    .servicios{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-bottom: 50px ;
+    }
+
+    .imgServicios{           
+        width: 50%;
+    }
+
+    .tituloServicio{
+        font-size: 1.2rem;
+    }
+
+
     nav ul{            
         display: flex;        
         list-style: none;
@@ -496,6 +579,7 @@ option{
         position: absolute;
         background:none;    
         top: 0;          
+        z-index: -1;
     }
 
     nav ul li{
@@ -511,7 +595,6 @@ option{
         font-size: 1.3rem;
         
     }
-
 
     .selectVenta{
         width: 75px;
@@ -534,4 +617,67 @@ option{
         padding-right: 5%;
     }
 
+    .buttonComercializaTuProp{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
 }
+
+@media(min-width: 1250px){
+    .servicios{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        
+    }
+
+    .buttonComercializaTuProp{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+}
+
+@media (hover: hover){
+    li:hover{
+        background-color: #6B3638;
+        color: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .buttonNavbar:hover{        
+        color: white;        
+    }
+
+    .selectAlquiler:hover{       
+        color: white;               
+    }
+
+    option{
+        color: #6B3638;
+    }
+    
+    .selectVenta:hover{       
+        color: white;       
+    }
+
+    li:active{
+        background-color: #6B3638;
+        color: white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .selectAlquiler:active{       
+        color: white;       
+    }
+    
+    .selectVenta:active{       
+        color: white;       
+    }
+    
+}
+
