@@ -174,7 +174,8 @@ nav ul{
     list-style: none;
     align-items: end;   
     position: absolute;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    background-color: #DCE2E2;
     width: 100%;
     height: auto;
     padding: 20px;  
@@ -374,14 +375,17 @@ option{
     font-size: 1.2rem;
 }
 
-.tituloServicios{
+.tituloSectionServicios{
     padding-bottom: 25px;
     top: 0;
+    background: rgb(214,198,196);
+    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
 }
 
-.tituloServicio{
+.tituloCardServicio{
     padding: 0px 5%;       
     color: white;
+    
 }
 
 .servicios{
@@ -390,6 +394,8 @@ option{
     justify-content: center;
     align-items: center;    
     margin-top: 0px;
+    background: rgb(214,198,196);
+    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%);
 }
 
 .servicio{
@@ -410,6 +416,21 @@ option{
     width: 70%;
 }
 
+.imgNosotros{
+    width: 100%;
+    
+}
+
+.sectionNosotros{
+    background-color: #DCE2E2;
+    padding: 3% 5% 0% 5%;
+    margin-top: 0px;
+}
+
+.h3Nosotros{
+    margin: 25px;
+}
+
 @media(max-width: 280px){
     .imgLogoNavbar{
         width: 100%;
@@ -428,10 +449,24 @@ option{
         grid-template-columns: auto auto;        
     }    
 
+    .imgNosotros{
+        width: 50%;
+    }
+
+    .sectionNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
 @media(min-width: 768px){
+
+    .imgNosotros{
+        width: 30%;        
+    }
 
     .servicio{
         margin: 20px;        
@@ -556,7 +591,7 @@ option{
     .servicios{
         display: grid;
         grid-template-columns: auto auto auto;
-        margin-bottom: 50px ;
+        padding-bottom: 50px ;
     }
 
     .imgServicios{           
