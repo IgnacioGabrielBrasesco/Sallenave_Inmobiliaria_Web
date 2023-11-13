@@ -3,10 +3,7 @@
     padding: 0%;
 }
 
-body{
-    /* background: rgb(214,198,196);
-    background: linear-gradient(90deg, rgba(214,198,196,1) 48%, rgba(255,249,251,1) 100%); */
-   
+body{    
     /* background-image: url(../img/FondoCasas.jpg); */
     background-color: #DCE2E2;
     width: 100%;    
@@ -20,7 +17,6 @@ nav{
     justify-content: space-between;
     height: 80px;
     width: 100%;
-    /* background-color: #D9D9D9; */
     background-color: #DCE2E2;
     padding: 1% 5%;    
     z-index: 10;
@@ -40,7 +36,6 @@ header{
 }
 
 .buttonNavbar{    
-    /* color: #2C3039; */
     color: #6B3638;
     font-size: 2rem;   
     border: none;
@@ -154,9 +149,7 @@ p{
     font-size: 1.3rem;
     position: relative;
     z-index: 5;
-    text-align: center;
-    /* margin: 5%; */
-    
+    text-align: center;   
 }
 
 .imgDePortadaBienvenida{    
@@ -167,14 +160,12 @@ p{
     width: 30rem;
 }
 
-nav ul{
-    
+nav ul{    
     display: none;    
     /* visibility: hidden; */
     list-style: none;
     align-items: end;   
     position: absolute;
-    /* background-color: #D9D9D9; */
     background-color: #DCE2E2;
     width: 100%;
     height: auto;
@@ -195,8 +186,7 @@ nav ul{
 }
 
 
-nav i{
-    
+nav i{    
     display: flex;
     font-size: 50px;    
     justify-content: center;
@@ -245,6 +235,7 @@ main form{
     margin-bottom: 25px;
     padding-bottom: 25px;
 }
+
 main form div{
     display: flex;
     justify-content: center;
@@ -324,7 +315,6 @@ h2{
     border-radius: 5px;
     border: solid 1px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-
 }
 
 .contenidoCard{
@@ -351,19 +341,6 @@ nav select{
     background: none;        
 }
 
-.selectVenta{
-    /* width: 100px; */
-    color: #6B3638;
-    font-size: 2rem;
-}
-
-.selectAlquiler{
-    /* width: 140px; */
-    color: #6B3638;
-    font-size: 2rem;
-    
-}
-
 .tituloDestacadas{
     display: flex;
     background: rgb(214,198,196);
@@ -384,8 +361,7 @@ option{
 
 .tituloCardServicio{
     padding: 0px 5%;       
-    color: white;
-    
+    color: white;    
 }
 
 .servicios{
@@ -408,7 +384,9 @@ option{
     background-color: #6B3638;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.9);   
     margin: 25px 15%;
-    opacity: 95%;
+    opacity: 95%;    
+    margin: 20px;  
+    width: 200px;          
 }
 
 .imgServicios{
@@ -417,8 +395,7 @@ option{
 }
 
 .imgNosotros{
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .sectionNosotros{
@@ -446,6 +423,54 @@ option{
     color: #6B3638;     
 }
 
+.contenedorCardsVentas{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarj{
+    margin: 5% 0px;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 325px;
+}
+
+.card{
+    border-radius: 10px;
+    border: solid 1px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);  
+    background-color: #DCE2E2;
+    
+}
+
+.carousel{
+    margin: 5%;
+}
+
+.btn{    
+    border-radius: 20px;
+}
+
+.btn-success{
+    background-color: #008000;
+}
+
+h5{
+    text-align: center;
+}
+
 @media(max-width: 280px){
     .imgLogoNavbar{
         width: 100%;
@@ -464,6 +489,11 @@ option{
         grid-template-columns: auto auto;        
     }    
 
+    .servicio{
+        margin: 20px;  
+        width: 200px;      
+    }
+
     .imgNosotros{
         width: 50%;
     }
@@ -474,6 +504,8 @@ option{
         justify-content: center;
         align-items: center;
     }
+
+    
 }
 
 
@@ -483,39 +515,11 @@ option{
         width: 30%;        
     }
 
-    .servicio{
-        margin: 20px;        
-    }
-
     .servicios{
         display: grid;
-        grid-template-columns: auto auto;
-        
+        grid-template-columns: auto auto;        
     }
    
-    /* nav ul{  
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        padding: 0px;  
-        position: absolute;
-        background-color: rgba(0,0,0,0.0);
-    }
-    
-   
-
-    .selectVenta{
-        width: 105px;
-    }
-
-    .selectAlquiler{
-        width: 135px;
-    } */
-    
-
     nav select{
         font-size: 1.5rem;    
     }    
@@ -584,25 +588,23 @@ option{
         margin-top: 60px;
         margin-bottom: 10px;
     }
-
-   /* main p{
-        margin-top: 0px;
-        margin-bottom: 60px;
-    } */
+   
     .buttonComercializaTuProp{
         margin-bottom: 40px;
         margin-top: 40px;
     }
+
+    .contenedorCardsVentas{
+        grid-template-columns: auto auto;            
+    }
     
 }
 
-@media(min-width: 860px){
-
-    .servicio{
-        margin: 20px;
-        width: 200px;        
+@media(min-width: 860px){  
+    .contenedorCardsVentas{
+        grid-template-columns: auto auto auto;            
     }
-
+    
     .servicios{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -617,6 +619,9 @@ option{
         font-size: 1.2rem;
     }
 
+    .imgLogoNavbar{
+        height: 65px;
+    }
 
     nav ul{            
         display: flex;        
@@ -633,8 +638,7 @@ option{
     }
 
     nav ul li{
-        display: inline;       
-        
+        display: inline;        
     }
 
     .active{
@@ -642,8 +646,7 @@ option{
     }
 
     .buttonNavbar{
-        font-size: 1.3rem;
-        
+        font-size: 1.3rem;        
     }
 
     .selectVenta{
@@ -657,33 +660,57 @@ option{
     }
 
     nav i{
-        visibility: hidden;
-        
+        visibility: hidden;        
     }
 
     nav{
         justify-content: space-between;
         padding-left: 5%;
-        padding-right: 5%;
+        padding-right: 5%;        
     }
 
     .buttonComercializaTuProp{
         margin-bottom: 40px;
         margin-top: 40px;
+    }
+
+    header{
+        margin-top: 80px;
     }
 
 }
 
 @media(min-width: 1250px){
+    .contenedorCardsVentas{
+        grid-template-columns: auto auto auto auto;            
+    }
+
     .servicios{
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        
+        grid-template-columns: auto auto auto auto auto;        
     }
 
     .buttonComercializaTuProp{
         margin-bottom: 40px;
         margin-top: 40px;
+    }
+
+    .imgLogoNavbar{
+        height: 65px;
+    }
+
+
+    nav ul{        
+        height: 90px;        
+    }
+
+    nav{
+        height: 90px;
+    }
+
+    header{
+        margin-top: 90px;
+        height: auto;
     }
 
 }
