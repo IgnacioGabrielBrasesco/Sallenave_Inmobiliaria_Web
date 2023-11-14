@@ -14,9 +14,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <link rel="StyleSheet" href="style/style.css" type="text/css" />
+    <link rel="StyleSheet" href="../style/style.css" type="text/css" />
     <link
-      href="iconos/fontawesome-free-6.4.2-web/css/all.css"
+      href="../iconos/fontawesome-free-6.4.2-web/css/all.css"
       rel="StyleSheet"
     />
   </head>
@@ -43,9 +43,9 @@
     <!--inicio del componente nav-->
     <nav>
       <!--logo del nav-->
-      <a href="#inicio" class="buttonNavbar imgLogoNavbar">
+      <a href="../index.html" class="buttonNavbar imgLogoNavbar">
         <img
-          src="img/SallenaveInmobiliariaLogotipo.png"
+          src="../img/SallenaveInmobiliariaLogotipo.png"
           class="imgLogoNavbar buttonNavbar"
           alt="Inmobiliaria Sallenave"
         />
@@ -53,7 +53,7 @@
       <!--ul del nav-->
       <ul>
         <li class="btnNav">
-          <a href="#inicio">
+          <a href="../index.html">
             <button class="buttonNavbar">inicio</button>
           </a>
         </li>
@@ -68,13 +68,13 @@
           </a>
         </li>
         <li class="btnNav">
-          <a href="./pages/venta.html">
+          <a href="../pages/venta.html">
             <button class="buttonNavbar">venta</button>
           </a>
         </li>
 
         <li class="btnNav">
-          <a href="./pages/alquiler.html">
+          <a href="../pages/alquiler.html">
             <button class="buttonNavbar">alquiler</button>
           </a>
         </li>
@@ -94,11 +94,11 @@
       <section class="sectionBienvenida">
         <article class="textosBienvenida">
           <h1>
-            <strong>Bienvenidos a Inmobiliaria Sallenave </strong>
+            <strong>Gracias por confiar en nosotros </strong>
           </h1>
           <p>
-            Gracias por confiar en nosotros ¡Estamos encantados de poder
-            ayudarte!
+            ¡Complete el formulario y nos comunicaremos con usted a la brevedad,
+            o llamenos por telefono si requiere una respuesta inmediata
           </p>
           <!--acá inicia el formulario del inicio-->
           <form action="">
@@ -106,165 +106,35 @@
               <p>¿Que operación queres realizar?</p>
               <select name="" id="">
                 <option value="0">Seleccionar</option>
-                <option value="1">compra</option>
+                <option value="1">venta</option>
                 <option value="2">alquiler</option>
+                <option value="3">alquiler transitorio</option>
               </select>
             </div>
             <div class="preguntarFormulario elegirPropiedad">
-              <p>Tipo de propiedad</p>
+              <p>¿Que propiedad queres comercializar?</p>
               <select name="" id="">
                 <option value="0">Seleccionar</option>
                 <option value="1">casa</option>
                 <option value="2">departamento</option>
                 <option value="3">terreno</option>
                 <option value="4">galpón</option>
-                <option value="5">Todos</option>
+                <option value="5">Cochera</option>
+                <option value="6">Loteo</option>
               </select>
             </div>
             <div class="preguntarFormulario elegirMonto">
-              <p>Monto máximo</p>
+              <p>¿Necesita tazación?</p>
               <select name="" id="">
                 <option value="0">Seleccionar</option>
-                <option value="1">Hasta U$D 12.000</option>
-                <option value="2">Hasta U$D 45.000</option>
-                <option value="3">Hasta U$D 100.000</option>
-                <option value="4">Hasta U$D 200.000</option>
-                <option value="5">Todos</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
               </select>
             </div>
             <!--Boton enviar del formulario de filtros del inicio-->
             <input class="submit" type="submit" name="" id="" />
           </form>
-          <!--Boton para comercializar tu propiedad-->
-          <a href="./pages/comercializar.html">
-            <button class="buttonComercializaTuProp">
-              Quiero comercializar mi propiedad
-            </button>
-          </a>
         </article>
-      </section>
-      <!--acá inicia seccion destacadas con 3 cards-->
-      <h2 class="tituloDestacadas">Propiedades destacadas</h2>
-      <section class="destacadas">
-        <!--Primera card-->
-        <article class="cardDestacada">
-          <figure>
-            <img
-              src="./img/destacadas/TerrenoDestacado/TerrazasAlSur/TerrazasAlSur1.jpg"
-              alt="Loteo destacado"
-            />
-          </figure>
-          <div class="contenidoCard">
-            <h3>Loteo</h3>
-            <p>Este loteo se destaca por su precio y ubicación estratégica</p>
-            <a href="#">ver más</a>
-          </div>
-        </article>
-        <!--Segunda card-->
-        <article class="cardDestacada">
-          <figure>
-            <img
-              src="./img/destacadas/CasaDestacada/CasaCentroRios/CasaCentroCuatroHab1.jpg"
-              alt="Loteo destacado"
-            />
-          </figure>
-          <div class="contenidoCard">
-            <h3>Casa</h3>
-            <p>Esta casa destaca por su confort, su ubicación y su comodidad</p>
-            <a href="#">ver más</a>
-          </div>
-        </article>
-        <!--Tercera card-->
-        <article class="cardDestacada">
-          <figure>
-            <img
-              src="./img/destacadas/DepartamentoDestacado/DeptoAvUranga/DeptoAvUranga1.jpg"
-              alt="Loteo destacado"
-            />
-          </figure>
-          <div class="contenidoCard">
-            <h3>Departamento</h3>
-            <p>Destacado por su modernización y su accesible precio</p>
-            <a href="#">ver más</a>
-          </div>
-        </article>
-      </section>
-      <!--acá termina Destacadas e inicia la seccion Nosotros-->
-      <a name="nosotros"></a>
-      <h2 class="tituloNosotros">Nosotros</h2>
-      <section class="sectionNosotros">
-        <img
-          src="./img/nosotros/JulianSallenave.jpg"
-          class="imgNosotros"
-          alt="Soy Julian Sallenave"
-        />
-        <h3 class="h3Nosotros">Nuestra inmobiliaria</h3>
-        <p>
-          Hola.
-          <br />
-          Soy Julian Sallenave ¡Esta es la página web oficial de nuestra
-          inmobiliaria!
-          <br />
-          Estamos encantados de que nos hayas encontrado.
-          <br />
-          <br />
-          Acá verás información sobre nuestra amplia selección de propiedades
-          para que puedas dar con el inmueble que buscas.
-          <br />
-          <br />
-          Esta página web, esta creada para ofrecerte una experiencia de
-          navegación fácil y agradable, con fotografías detalladas y
-          descripciones completas de cada propiedad. Además, nuestro equipo de
-          profesionales altamente capacitados está a tu disposición para
-          ayudarte en todo lo que necesites.
-          <br />
-          <br />
-          Recordá que siempre podés contactarnos de manera directa a través de
-          nuestras lineas telefónicas, ya sea por Whatsapp o mediante llamada a
-          cualquiera de nuestros numeros. También podés seguirnos en instagram
-          para ver día a día nuestras novedades. O podés optar por acercarte a
-          nuestras oficinas ubicadas en el centro de la ciudad de Paraná, Entre
-          Ríos, y obtener una atención completamente personalizada con
-          cualquiera de las personas que integran nuestro equipo de trabajo.
-          Encontrá todos nuestros datos en la sección de contacto.
-          <br />
-          <br />
-          Podémos ayudarte tanto a comercializar tus propiedades mediante
-          procesos de venta o alquiler como a encontrar la propiedad que estás
-          buscando para comprar o alquilar. Cualquiera sea tu deseo, no dudes en
-          contactarte con nosotros. Gracias por visitarnos, ¡esperamos poder
-          servirte pronto!
-          <br />
-          <br />
-        </p>
-      </section>
-      <!--acá termina Nosotros e inicia la seccion Servicios-->
-      <a name="servicios"></a>
-      <h2 class="tituloSectionServicios">Servicios</h2>
-      <section class="servicios">
-        <div class="servicio">
-          <img src="iconos/servicios/2.png" class="imgServicios" alt="" />
-          <h3 class="tituloCardServicio">
-            Comercializamos <br />
-            tu inmueble
-          </h3>
-        </div>
-        <div class="servicio">
-          <img src="iconos/servicios/3.png" class="imgServicios" alt="" />
-          <h3 class="tituloCardServicio">Administramos tu consorcio</h3>
-        </div>
-        <div class="servicio">
-          <img src="./iconos/servicios/4.png" class="imgServicios" alt="" />
-          <h3 class="tituloCardServicio">Tazamos tus propiedades</h3>
-        </div>
-        <div class="servicio">
-          <img src="./iconos/servicios/5.png" class="imgServicios" alt="" />
-          <h3 class="tituloCardServicio">Vendemos propiedades</h3>
-        </div>
-        <div class="servicio">
-          <img src="./iconos/servicios/6.png" class="imgServicios" alt="" />
-          <h3 class="tituloCardServicio">Alquilamos propiedades</h3>
-        </div>
       </section>
     </main>
     <!--acá inicia el footer-->
