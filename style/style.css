@@ -445,6 +445,7 @@ option{
     align-items: center;
     display: flex;
     height: 350px;
+    justify-content: space-between;
 }
 
 .card{
