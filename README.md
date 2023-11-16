@@ -4,7 +4,15 @@ Este proyecto consiste en el desarrollo de un sitio web para Inmobiliaria Sallen
 
 ## Autor
 
-- [@ignaciogabrielbrasesco](https://ignaciogabrielbrasesco.github.io/BAmultiplica/)
+- [@ignaciogabrielbrasesco](https://www.linkedin.com/in/ignacio-gabriel-brasesco/)
+
+## Github
+
+https://github.com/IgnacioGabrielBrasesco/BAmultiplica.git
+
+## Deploy
+
+| https://ignaciogabrielbrasesco.github.io/BAmultiplica/ |
 
 ## Tecnologias utilizadas
 
