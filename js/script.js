@@ -35,17 +35,17 @@ input.addEventListener("keyup", (event) => {
 
 
 
-// const filtros = document.querySelectorAll(".filtros");
-// const cards = document.querySelectorAll(".card");
+//  const filtros = document.querySelectorAll(".filtros");
+//  const cards = document.querySelectorAll(".card");
 
-// cards.forEach((card) => {
-//     card.addEventListener("click", (e) => {
-//         if(e.target.matches("button")){
-//             const card = e.target.parentElement.parentElement;
-//             console.log(card.querySelector("h5").textContent);
-//         }
-//     })
-// })
+//  cards.forEach((card) => {
+//      card.addEventListener("click", (e) => {
+//          if(e.target.matches("button")){
+//              const card = e.target.parentElement.parentElement;
+//              console.log(card.querySelector("h5").textContent);
+//          }
+//      })
+//  })
 
 
 
