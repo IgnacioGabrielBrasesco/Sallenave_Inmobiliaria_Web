@@ -20,32 +20,15 @@ input.addEventListener("keyup", (event) => {
     
     cards.forEach((card) => {
         if((card.querySelector(".card-title").textContent.toLowerCase().includes(value))){
-            card.style.display = "block";
-            
-            // card.style.order = "0";
-            
-            
-            
+            card.style.display = "block";   
         } else{
-            card.style.display = "none";
-            // card.style.order = "1";
+            card.style.display = "none";            
         };
     });
 }); 
 
 
 
-//  const filtros = document.querySelectorAll(".filtros");
-//  const cards = document.querySelectorAll(".card");
-
-//  cards.forEach((card) => {
-//      card.addEventListener("click", (e) => {
-//          if(e.target.matches("button")){
-//              const card = e.target.parentElement.parentElement;
-//              console.log(card.querySelector("h5").textContent);
-//          }
-//      })
-//  })
 
 
 

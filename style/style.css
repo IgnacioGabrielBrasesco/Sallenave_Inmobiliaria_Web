@@ -3,8 +3,7 @@
     padding: 0%;
 }
 
-body{    
-    /* background-image: url(../img/FondoCasas.jpg); */
+body{        
     background-color: #DCE2E2;
     width: 100%;    
     font-family: serif;    
@@ -454,8 +453,7 @@ option{
     border-radius: 10px;
     border: solid 1px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);  
-    background-color: #DCE2E2;   
-    
+    background-color: #DCE2E2;       
 }
 
 .carousel{
@@ -482,13 +480,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    
-
-}
-
-.filtros{
-   
+    flex-wrap: wrap;  
 }
 
 .contenedorFiltros .btn{
@@ -550,7 +542,6 @@ h6{
         justify-content: center;
         align-items: center;
     }
-
     
 }
 
@@ -642,9 +633,7 @@ h6{
 
     .contenedorCardsVentas{
         grid-template-columns: auto auto;        
-    }
-
-    .
+    }   
     
 }
 
@@ -746,7 +735,6 @@ h6{
     .imgLogoNavbar{
         height: 65px;
     }
-
 
     nav ul{        
         height: 90px;        
