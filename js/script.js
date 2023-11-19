@@ -26,9 +26,3 @@ input.addEventListener("keyup", (event) => {
         };
     });
 }); 
-
-
-
-
-
-
