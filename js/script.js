@@ -22,17 +22,26 @@ input.addEventListener("keyup", (event) => {
 
     const cards = document.querySelectorAll(".card");
     
-    cards.forEach((card) => {
-        if((card.querySelector(".card-title").textContent.toLowerCase().includes(value))){
-            card.style.display = "block";   
-        } else{
-            card.style.display = "none";            
-        };
-    });
+    // cards.forEach((card) => {
+    //     if((card.querySelector(".card-title").textContent.toLowerCase().includes(value))){
+    //         card.style.display = "block";   
+    //     } else{
+    //         card.style.display = "none";            
+    //     };
+    // });
+getProp(propiedades.filter((propiedad) => propiedad.nombre.toLowerCase().includes(value))
+  );
+
+  if(contenedorCardsVentas.children.length === 0){
+    contenedorCardsVentas.innerHTML=
+    `
+    <p>No se encontraron resultados, prueba con otro nombre</p>
+    `
+  }
+
 }); 
 
-//Creación de Cards: cree array con todos los datos de todas las propiedades 
-
+//Array con todos los datos de todas las propiedades 
 const propiedades = [
     {
         id: 0,
@@ -43,9 +52,10 @@ const propiedades = [
     "../img/Casas/CasaCentroRios/CasaCentroCuatroHab9.jpg", "../img/Casas/CasaCentroRios/CasaCentroCuatroHab10.jpg"],
     nombre: "Casa: 4 habitaciones",
     ubicacion: "Paraná, Zona Centro",
-    precio: 330000,
+    precio: "330.000",
     caracteristica: "Pileta - Fondo - Cocina - Living - Comedor - Oficina - 3 Baños - terraza - Cochera...",
     carousel: "carouselExampleIndicators0",
+    categoria: "casas",
     },
 
     {
@@ -57,9 +67,10 @@ const propiedades = [
     "../img/Casas/CasaCatamarca/CasaCatamarca3.jpg", "../img/Casas/CasaCatamarca/CasaCatamarca5.jpg"],
     nombre: "Casa: 5 habitaciones",
     ubicacion: "Paraná, Zona Parque Urquiza",
-    precio: 205000,
+    precio: "205.000",
     caracteristica: "Living comedor - Cocina comedor - Garage - 3 Baños - Lavadero - Fondo - Quincho - Churrasquera...",
     carousel: "carouselExampleIndicators1",
+    categoria: "casas",
     },
 
     {
@@ -73,9 +84,10 @@ const propiedades = [
 
     nombre: "Casa: 5 habitaciones",
     ubicacion: "Paraná, Zona Parque Urquiza",
-    precio: 120000,
+    precio: "120.000",
     caracteristica: "2 baños - Living-comedor - cocina-comedor - Sala de escritorio - Lavadero - Depósito - Fondo...",
     carousel: "carouselExampleIndicators2",
+    categoria: "casas",
     },
 
     {
@@ -89,9 +101,10 @@ const propiedades = [
 
   nombre: "Casa: 3 habitaciones",
   ubicacion: "Paraná, Zona L. Jordán y Darwin",
-  precio: 120000,
+  precio: "120.000",
   caracteristica: "2 baños - Living-comedor - cocina abierta - Fondo con churrasquera y quincho abierto...",
   carousel: "carouselExampleIndicators3",
+  categoria: "casas",
   },
 
   {
@@ -105,9 +118,10 @@ imagen: ["../img/Casas/CasaSolvenciaSanBenito/CasaTresDormSanBenito1.jpg","../im
 
 nombre: "Casa: 3 habitaciones",
 ubicacion: "San Benito, Barrio Solvencia",
-precio: 90000,
+precio: "90.000",
 caracteristica: "Cochera - Lavadero - 2 baños - Cocina - amplio living-comedor - luz y agua - Escritura al día...",
 carousel: "carouselExampleIndicators4",
+categoria: "casas",
 },
 
 {
@@ -121,9 +135,10 @@ imagen: ["../img/Casas/CasaFeliciano/CasaFeliciano1.jpg","../img/Casas/CasaFelic
 
 nombre: "Casa: 3 habitaciones",
 ubicacion: "Paraná, Zona Feliciano y Racedo",
-precio: 85000,
+precio: "85.000",
 caracteristica: "Dos baños - Cocina separada - Living-comedor - Patio grande - Cochera...",
 carousel: "carouselExampleIndicators5",
+categoria: "casas",
 },
 
 {
@@ -137,9 +152,10 @@ imagen: ["../img/Casas/casaBelgrano/CasaBelgrano1.jpg","../img/Casas/casaBelgran
 
 nombre: "Casa: 3 habitaciones",
 ubicacion: "Paraná, Esquina Belgrano y Carbo",
-precio: 75000,
+precio: "75.000",
 caracteristica: "Un baño - Amplia cocina comedor - Living - Sotano - Lavadero - Patio con churrasquera...",
 carousel: "carouselExampleIndicators6",
+categoria: "casas",
 },
 
 {
@@ -153,9 +169,10 @@ imagen: ["../img/Casas/Duplex1/DuplexDosHabitaciones1.svg","../img/Casas/Duplex1
 
 nombre: "Casa: 2 habitaciones",
 ubicacion: "Paraná, Zona J. Newbery y Garrigó",
-precio: 45000,
+precio: "45.000",
 caracteristica: "Dos baños - Cocina separada - Living-comedor - Patio delantero - Cochera - Churrasquera...",
 carousel: "carouselExampleIndicators7",
+categoria: "casas",
 },
 
 {
@@ -169,9 +186,10 @@ imagen: ["../img/Casas/CasaParacao/CasaDosDormParacao1.jpg","../img/Casas/CasaPa
 
 nombre: "Casa: 2 habitaciones",
 ubicacion: "Paraná, Zona Club Paracao",
-precio: 32000,
+precio: "32.000",
 caracteristica: "Cocina-Living-comedor - 1 baño - Amplio fondo - Cochera pasante para 2 o más autos...",
 carousel: "carouselExampleIndicators8",
+categoria: "casas",
 },
 
 {
@@ -185,9 +203,10 @@ imagen: ["../img/Galpones/GalponCincoEsquinas/GalponCincoEsquinas1.jpg","../img/
 
 nombre: "Galpon / Local comercial",
 ubicacion: "Paraná, Zona Cinco Esquinas",
-precio: 310000,
+precio: "310.000",
 caracteristica: "Luz - Gas - Agua - Baño - Cocina - Patio - Amplias dimensiones...",
 carousel: "carouselExampleIndicators9",
+categoria: "galpones",
 },
 
 {
@@ -201,9 +220,10 @@ imagen: ["../img/Departamentos/DeptoLaprida/DeptoLaprida1.jpg","../img/Departame
 
 nombre: "Departamento: 3 habitaciones",
 ubicacion: "Paraná, Laprida y Santiago del Est.",
-precio: 55000,
+precio: "55.000",
 caracteristica: "2 Baño - cocina sectorizada con barra desayunadora - living-comedor...",
 carousel: "carouselExampleIndicators10",
+categoria: "departamentos",
 },
 
 {
@@ -217,9 +237,10 @@ imagen: ["../img/Departamentos/DeptoAvUranga/DeptoAvUranga1.jpg","../img/Departa
 
 nombre: "Departamento: 2 habitaciones",
 ubicacion: "Paraná, Av. Uranga",
-precio: 54000,
+precio: "54.000",
 caracteristica: "Modernizado - Con balcón - Baño - living-cocina-comedor - barra desayunadora...",
 carousel: "carouselExampleIndicators11",
+categoria: "departamentos",
 },
 
 {
@@ -233,9 +254,10 @@ imagen: ["../img/Departamentos/DeptoVictoria/DeptoVictoria1.jpg","../img/Departa
 
 nombre: "Departamento: 1 habitaciones",
 ubicacion: "Paraná, Victoria y Corrientes",
-precio: 43000,
+precio: "43.000",
 caracteristica: "Baño - habitación con placard - amplio living-cocina-comedor - ascensor...",
 carousel: "carouselExampleIndicators12",
+categoria: "departamentos",
 },
 
 {
@@ -249,9 +271,10 @@ imagen: ["../img/Departamentos/DeptoHipolitoYrigoyen/DeptoHipolitoYrigoyen1.jpg"
 
 nombre: "Departamento: 1 habitaciones",
 ubicacion: "Paraná, Calle Hipolito Yrigoyen",
-precio: 40000,
+precio: "40.000",
 caracteristica: "Balcón en piso 11 - living-cocina-comedor...",
 carousel: "carouselExampleIndicators13",
+categoria: "departamentos",
 },
 
 {
@@ -265,9 +288,10 @@ imagen: ["../img/Terrenos/TerrenoCentro/TerrenoCentro1.jpg","../img/Terrenos/Ter
 
 nombre: "Terreno 207m²",
 ubicacion: "Paraná, Zona Centro",
-precio: 40000,
+precio: "40.000",
 caracteristica: "Gas - Asfalto - Cloaca - Luz - Agua...",
 carousel: "carouselExampleIndicators14",
+categoria: "terrenos",
 },
 
 {
@@ -281,9 +305,10 @@ imagen: ["../img/Terrenos/TerrenoZonaClubTilcada/TerrenoZonaClubTilcara1.jpg",".
 
 nombre: "Terreno 30x40²",
 ubicacion: "Zona Club Tilcara. Ruta 18 km 20/5",
-precio: 33000,
+precio: "33.000",
 caracteristica: "Agua - Piscina - Luz - Construcción...",
 carousel: "carouselExampleIndicators15",
+categoria: "terrenos",
 },
 
 {
@@ -297,9 +322,10 @@ imagen: ["../img/Terrenos/LoteoLasTipas/LoteoLasTipas1.jpg","../img/Terrenos/Lot
 
 nombre: "Loteo Las Tipas 10x30",
 ubicacion: "Paraná, Churruarin y Gob. Crespo",
-precio: 22000,
+precio: "22.000",
 caracteristica: "Gas - Asfalto - Cloaca - Luz - Agua...",
 carousel: "carouselExampleIndicators16",
+categoria: "loteos",
 },
 
 {
@@ -313,9 +339,10 @@ imagen: ["../img/Terrenos/LoteoLebensonh/LoteoLebensonh1.jpg","../img/Terrenos/L
 
 nombre: "Loteo Lebensonh 10x32",
 ubicacion: "Paraná, Lebensonh",
-precio: 20000,
+precio: "20.000",
 caracteristica: "Asfalto - Cloaca - Luz - Agua...",
 carousel: "carouselExampleIndicators17",
+categoria: "loteos",
 },
 
 {
@@ -329,9 +356,10 @@ imagen: ["../img/Terrenos/JardinDelHipodromo/JardinDelHipodromo1.jpg","../img/Te
 
 nombre: "Loteo Jardín Del Hipodromo 625m²",
 ubicacion: "Oro Verde",
-precio: 18000,
+precio: "18.000",
 caracteristica: "Asfalto - Cloaca - Luz - Agua...",
 carousel: "carouselExampleIndicators18",
+categoria: "loteos",
 },
 
 {
@@ -345,9 +373,10 @@ imagen: ["../img/Terrenos/LoteoLosLapachos/LoteoLosLapachos1.jpg","../img/Terren
 
 nombre: "Loteo Los Lapachos 10x30",
 ubicacion: "Paraná, Lebensonh",
-precio: 17000,
+precio: "17.000",
 caracteristica: "Asfalto - Agua - Luz - Parquizado...",
 carousel: "carouselExampleIndicators19",
+categoria: "loteos",
 },
 
 {
@@ -361,9 +390,10 @@ imagen: ["../img/Terrenos/TerrazasAlSur/TerrazasAlSur1.jpg","../img/Terrenos/Ter
 
 nombre: "Loteo Terrazas Al Sur 333m²",
 ubicacion: "Oro Verde, Triangular",
-precio: 11500,
+precio: "11.500",
 caracteristica: "Asfalto - Cloaca - Luz - Agua...",
 carousel: "carouselExampleIndicators20",
+categoria: "loteos",
 },
 
 {
@@ -377,9 +407,10 @@ imagen: ["../img/Terrenos/UnTerrenoSauceMontrull/UnTerrenoSauceMontrull1.jpg",".
 
 nombre: "Terreno 421m²",
 ubicacion: "Sauce Montrull",
-precio: 11500,
+precio: "11.500",
 caracteristica: "Asfalto - Agua - Luz - Parquizado...",
 carousel: "carouselExampleIndicators21",
+categoria: "terrenos",
 },
 
 {
@@ -393,9 +424,10 @@ imagen: ["../img/Terrenos/TresTerrenosSauceMontrull/TresTerrenosSauceMontrul1.jp
 
 nombre: "Terrenos 315m²",
 ubicacion: "Sauce Montrull",
-precio: 10000,
+precio: "10.000",
 caracteristica: "Asfalto - Agua - Luz - Parquizado...",
 carousel: "carouselExampleIndicators22",
+categoria: "terrenos",
 },
 
 {
@@ -409,22 +441,24 @@ imagen: ["../img/Terrenos/TerrenoSanBenito/TerrenoSanBenito1.jpg","../img/Terren
 
 nombre: "Terrenos 300m²²",
 ubicacion: "San Benito",
-precio: 5800,
+precio: "5.800",
 caracteristica: "Mensurado - Luz - Agua...",
 carousel: "carouselExampleIndicators23",
+categoria: "terrenos",
 },
 
 ];
 
 // selecciono el contenedor de html donde voy a insertar las cards de propiedades
-
 const contenedorCardsVentas = document.querySelector(".contenedorCardsVentas");
 
 // mapeo array propiedades e inserto cards en html
-
+function getProp(propiedades){
+  contenedorCardsVentas.innerHTML = "";
+  
 propiedades.map((propiedad) => {
     contenedorCardsVentas.innerHTML +=`
-    <div class="card tarj">
+    <div class="card tarj" id="${propiedades.id}">
           <div id="${propiedad.carousel}" class="carousel slide">
             <div class="carousel-indicators">
               <button
@@ -602,4 +636,26 @@ propiedades.map((propiedad) => {
           </div>
         </div>
         `;
+});
+
+}
+
+getProp(propiedades);
+
+// Filtros
+
+
+const filters = document.querySelectorAll(".filter");
+
+filters.forEach((fil) => {
+  fil.addEventListener("click", (e) =>{
+
+    if(e.target.textContent === "Todos"){
+      getProp(propiedades)
+    } else {
+      getProp(
+        propiedades.filter((propiedades) => propiedades.categoria.toLowerCase() == e.target.textContent.toLowerCase())
+      );
+    }
+  });  
 });

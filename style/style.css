@@ -509,6 +509,11 @@ h6{
     border-radius: 10px;  
 }
 
+.filtroActivo{
+    background-color: #6B3638;
+    color: white;    
+}
+
 @media(max-width: 280px){
     .imgLogoNavbar{
         width: 100%;
