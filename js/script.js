@@ -647,14 +647,23 @@ getProp(propiedades);
 
 const filters = document.querySelectorAll(".filter");
 
-filters.forEach((fil) => {
-  fil.addEventListener("click", (e) =>{
 
-    if(e.target.textContent === "Todos"){
-      getProp(propiedades)
+filters.forEach((fil) => {
+  fil.addEventListener("click", (event) => {
+
+    filters.forEach((filter) => {
+      filter.classList.remove("filtroActivo");
+    });
+
+    if(!event.target.className.includes("filtroActivo")) {
+      fil.classList.add("filtroActivo");
+    }
+
+    if(event.target.textContent === "Todos"){
+      getProp(propiedades);
     } else {
       getProp(
-        propiedades.filter((propiedades) => propiedades.categoria.toLowerCase() == e.target.textContent.toLowerCase())
+        propiedades.filter((propiedades) => propiedades.categoria.toLowerCase() === event.target.textContent.toLowerCase())
       );
     }
   });  
