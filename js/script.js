@@ -616,7 +616,7 @@ propiedades.map((propiedad) => {
             <p class="card-text">
             ${propiedad.caracteristica}
             </p>
-            <a href="#" class="btn btn-success">ampliar info</a>
+            <a href="../pages/detalles.html?id=${propiedad.id}" class="btn btn-success">ampliar info</a>
           </div>
         </div>
         `;

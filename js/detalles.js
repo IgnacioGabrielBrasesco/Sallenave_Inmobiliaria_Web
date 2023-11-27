@@ -412,15 +412,185 @@ const propiedad = propiedades.find((prop) => prop.id == id);
 const contenedorDetallesProp = document.querySelector(".contenedorDetallesProp");
 
 contenedorDetallesProp.innerHTML = `
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">
-    aksjdfañlskdjflñasdkjflñasdkjfsñk
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-`;
+
+<div class="cardDetalles">
+<div class="imgCardDetalle" id="${propiedades.id}">
+          <div id="${propiedad.carousel}" class="carousel slide carousel-detalles">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#${propiedad.carousel}"
+                data-bs-slide-to="9"
+                aria-label="Slide 10"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="${propiedad.imagen[0]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[1]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[2]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[3]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[4]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[5]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[6]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[7]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[8]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="${propiedad.imagen[9]}"
+                  class="d-block w-100 imgCasas"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#${propiedad.carousel}"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#${propiedad.carousel}"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <div class="card-body-detalles">
+            <h5 class="card-title textos-card-detalle"><strong>${propiedad.nombre}</strong></h5>
+            <h6 class="card-title textos-card-detalle">${propiedad.ubicacion}</h6>
+            <h4 class="card-title textos-card-detalle" style="color: green">
+              <strong>USD ${propiedad.precio}</strong>
+            </h4>
+            
+            <p class="card-text textos-card-detalle">
+            ${propiedad.caracteristica}
+            </p>
+            
+          </div>
+        </div>
+        `;
+    
 
