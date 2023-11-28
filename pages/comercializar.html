@@ -96,7 +96,7 @@
           <h1>
             <strong>Gracias por confiar en nosotros </strong>
           </h1>
-          <p>
+          <p class="pComercializar">
             ¡Complete el formulario y nos comunicaremos con usted a la brevedad,
             o llamenos por telefono si requiere una respuesta inmediata
           </p>
@@ -105,6 +105,7 @@
             action="mailto:sallenave.inmobiliaria@gmail.com"
             method="post"
             enctype="text/plain"
+            class="formComercializar"
           >
             <div class="preguntarFormulario elejirOperacion">
               <p>¿Que operación queres realizar?</p>
@@ -135,6 +136,68 @@
                 <option value="2">No</option>
               </select>
             </div>
+
+            <div class="preguntarFormulario">
+              <label for="name" class="labelComercializar elegirMonto"
+                >Nombre
+              </label>
+
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="introduce tu nombre"
+                class="inputDetalles"
+              />
+            </div>
+
+            <div class="preguntarFormulario">
+              <label for="email" class="labelComercializar elegirMonto"
+                >Email
+              </label>
+
+              <input
+                type="text"
+                name="email"
+                id="email"
+                required
+                placeholder="introduce tu email"
+                class="inputDetalles"
+              />
+            </div>
+
+            <div class="preguntarFormulario">
+              <label for="tel" class="labelComercializar elegirMonto"
+                >Teléfono
+              </label>
+
+              <input
+                type="number"
+                name="telefono"
+                id="telefono"
+                required
+                placeholder="introduce tu numero de Whatsapp"
+                class="inputDetalles"
+              />
+            </div>
+
+            <div class="preguntarFormulario">
+              <label for="comentario" class="labelComercializar"
+                >Consulta</label
+              >
+
+              <textarea
+                name="comentario"
+                id="comentario"
+                required=""
+                rows="5"
+                cols="48"
+                class="inputDetalles"
+              >
+              </textarea>
+            </div>
+
             <!--Boton enviar del formulario de filtros del inicio-->
             <input class="submit" type="submit" name="" id="" />
           </form>
@@ -150,7 +213,7 @@
         </legend>
         <hr />
         <!--Formulario del footer-->
-        <div class="cajaFooter formularioFooter">
+        <!-- <div class="cajaFooter formularioFooter">
           <h2>Dejanos un mensaje</h2>
           <form
             action="mailto:sallenave.inmobiliaria@gmail.com"
@@ -190,30 +253,36 @@
             <br />
             <input class="submit" type="submit" value="Enviar" name="" id="" />
           </form>
-        </div>
+        </div> -->
         <!--Mapa del footer-->
-        <div class="cajaFooter ubicacion">
+        <!-- <div class="cajaFooter ubicacion">
           <h2>Encontranos acá</h2>
           <p>Rosario del tala 172. Paraná, Entre Ríos</p>
           <iframe
             class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.4831917291326!2d-60.529113024678615!3d-31.730009574118665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4527a2e707757%3A0x8bad3ce53daa643d!2sRosario%20del%20Tala%20172%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1682618192562!5m2!1ses!2sar"
           ></iframe>
-        </div>
-        <hr />
+        </div> -->
+        <!-- <hr /> -->
         <!--Lineas telefonicas del footer-->
-        <div class="cajaFooter lineasTelefonicas">
-          <h2>Nuestras lineas telefonicas</h2>
-          <p>
-            Tel: 3434430731
-            <br />
-            Cel: 3434167941 / 3434566602 / 3434543270
-          </p>
-        </div>
-        <!--Correos electronicos del footer-->
-        <div class="cajaFooter contactoEmail">
-          <h2>Email</h2>
-          <p>inmobiliariasallenave@gmail.com</p>
+        <div class="cajasFooterComercializar">
+          <div class="ubicacionFooter">
+            <h2>Encontranos acá</h2>
+            <p>Rosario del tala 172. Paraná, Entre Ríos</p>
+          </div>
+          <div class="cajaFooter lineasTelefonicas">
+            <h2>Nuestras lineas telefonicas</h2>
+            <p>
+              Tel: 3434430731
+              <br />
+              Cel: 3434167941 / 3434566602 / 3434543270
+            </p>
+          </div>
+          <!--Correos electronicos del footer-->
+          <div class="cajaFooter contactoEmail">
+            <h2>Email</h2>
+            <p>inmobiliariasallenave@gmail.com</p>
+          </div>
         </div>
       </fieldset>
     </footer>

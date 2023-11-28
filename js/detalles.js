@@ -578,6 +578,9 @@ contenedorDetallesProp.innerHTML = `
             </button>
           </div>
           </div>
+
+          </div>
+
           <div class="card-body-detalles">
             <h5 class="card-title textos-card-detalle"><strong>${propiedad.nombre}</strong></h5>
             <h6 class="card-title textos-card-detalle">${propiedad.ubicacion}</h6>
@@ -589,7 +592,7 @@ contenedorDetallesProp.innerHTML = `
             ${propiedad.caracteristica}
             </p>
             
-          </div>
+          
         </div>
         `;
     
