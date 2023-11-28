@@ -1,11 +1,11 @@
 const destacadas = [
     {
         id: 0,
-    imagen: ["./img/Casas/CasaCentroRios/CasaCentroCuatroHab1.jpg","./img/Casas/CasaCentroRios/CasaCentroCuatroHab2.jpg",
-    "./img/Casas/CasaCentroRios/CasaCentroCuatroHab3.jpg", "./img/Casas/CasaCentroRios/CasaCentroCuatroHab4.jpg", 
-    "./img/Casas/CasaCentroRios/CasaCentroCuatroHab5.jpg", "./img/Casas/CasaCentroRios/CasaCentroCuatroHab6.jpg",
-    "./img/Casas/CasaCentroRios/CasaCentroCuatroHab7.jpg", "./img/Casas/CasaCentroRios/CasaCentroCuatroHab8.jpg",
-    "./img/Casas/CasaCentroRios/CasaCentroCuatroHab9.jpg", "./img/Casas/CasaCentroRios/CasaCentroCuatroHab10.jpg"],
+    imagen: ["../img/Casas/CasaCentroRios/CasaCentroCuatroHab1.jpg","../img/Casas/CasaCentroRios/CasaCentroCuatroHab2.jpg",
+    "../img/Casas/CasaCentroRios/CasaCentroCuatroHab3.jpg", "../img/Casas/CasaCentroRios/CasaCentroCuatroHab4.jpg", 
+    "../img/Casas/CasaCentroRios/CasaCentroCuatroHab5.jpg", "../img/Casas/CasaCentroRios/CasaCentroCuatroHab6.jpg",
+    "../img/Casas/CasaCentroRios/CasaCentroCuatroHab7.jpg", "../img/Casas/CasaCentroRios/CasaCentroCuatroHab8.jpg",
+    "../img/Casas/CasaCentroRios/CasaCentroCuatroHab9.jpg", "../img/Casas/CasaCentroRios/CasaCentroCuatroHab10.jpg"],
     nombre: "Casa: 4 habitaciones",
     ubicacion: "Paraná, Zona Centro",
     precio: "330.000",
@@ -18,12 +18,12 @@ const destacadas = [
 
     {
         id: 1,
-      imagen: ["./img/Terrenos/TerrazasAlSur/TerrazasAlSur1.jpg","./img/Terrenos/TerrazasAlSur/TerrazasAlSur2.jpg",
-      "./img/Terrenos/TerrazasAlSur/TerrazasAlSur3.jpg", "./img/Terrenos/TerrazasAlSur/TerrazasAlSur4.jpg", 
-      "./img/Terrenos/TerrazasAlSur/TerrazasAlSur5.jpg", "./img/Terrenos/TerrazasAlSur/TerrazasAlSur6.jpg", 
-      "./img/Terrenos/TerrazasAlSur/TerrazasAlSur7.jpg", "./img/Terrenos/TerrazasAlSur/TerrazasAlSur8.jpg", 
-      "./img/Terrenos/TerrazasAlSur/TerrazasAlSur1.jpg", "./img/Terrenos/TerrazasAlSur/TerrazasAlSur2.jpg", 
-      "./img/Terrenos/TerrazasAlSur/TerrazasAlSur11.jpg"], 
+      imagen: ["../img/Terrenos/TerrazasAlSur/TerrazasAlSur1.jpg","../img/Terrenos/TerrazasAlSur/TerrazasAlSur2.jpg",
+      "../img/Terrenos/TerrazasAlSur/TerrazasAlSur3.jpg", "../img/Terrenos/TerrazasAlSur/TerrazasAlSur4.jpg", 
+      "../img/Terrenos/TerrazasAlSur/TerrazasAlSur5.jpg", "../img/Terrenos/TerrazasAlSur/TerrazasAlSur6.jpg", 
+      "../img/Terrenos/TerrazasAlSur/TerrazasAlSur7.jpg", "../img/Terrenos/TerrazasAlSur/TerrazasAlSur8.jpg", 
+      "../img/Terrenos/TerrazasAlSur/TerrazasAlSur1.jpg", "../img/Terrenos/TerrazasAlSur/TerrazasAlSur2.jpg", 
+      "../img/Terrenos/TerrazasAlSur/TerrazasAlSur11.jpg"], 
       
       nombre: "Loteo Terrazas Al Sur 333m²",
       ubicacion: "Oro Verde, Triangular",
@@ -36,12 +36,12 @@ const destacadas = [
 
       {
         id: 2,
-      imagen: ["./img/Departamentos/DeptoAvUranga/DeptoAvUranga1.jpg","./img/Departamentos/DeptoAvUranga/DeptoAvUranga2.jpg",
-      "./img/Departamentos/DeptoAvUranga/DeptoAvUranga3.jpg", "./img/Departamentos/DeptoAvUranga/DeptoAvUranga4.jpg", 
-      "./img/Departamentos/DeptoAvUranga/DeptoAvUranga5.jpg", "./img/Departamentos/DeptoAvUranga/DeptoAvUranga6.jpg", 
-      "./img/Departamentos/DeptoAvUranga/DeptoAvUranga7.jpg", "./img/Departamentos/DeptoAvUranga/DeptoAvUranga4.jpg", 
-      "./img/Departamentos/DeptoAvUranga/DeptoAvUranga5.jpg", "./img/Departamentos/DeptoAvUranga/DeptoAvUranga6.jpg", 
-      "./img/Departamentos/DeptoAvUranga/DeptoAvUranga11.jpg"], 
+      imagen: ["../img/Departamentos/DeptoAvUranga/DeptoAvUranga1.jpg","../img/Departamentos/DeptoAvUranga/DeptoAvUranga2.jpg",
+      "../img/Departamentos/DeptoAvUranga/DeptoAvUranga3.jpg", "../img/Departamentos/DeptoAvUranga/DeptoAvUranga4.jpg", 
+      "../img/Departamentos/DeptoAvUranga/DeptoAvUranga5.jpg", "../img/Departamentos/DeptoAvUranga/DeptoAvUranga6.jpg", 
+      "../img/Departamentos/DeptoAvUranga/DeptoAvUranga7.jpg", "../img/Departamentos/DeptoAvUranga/DeptoAvUranga4.jpg", 
+      "../img/Departamentos/DeptoAvUranga/DeptoAvUranga5.jpg", "../img/Departamentos/DeptoAvUranga/DeptoAvUranga6.jpg", 
+      "../img/Departamentos/DeptoAvUranga/DeptoAvUranga11.jpg"], 
       
       nombre: "Departamento: 2 habitaciones",
       ubicacion: "Paraná, Av. Uranga",
