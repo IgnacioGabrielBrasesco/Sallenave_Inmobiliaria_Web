@@ -63,7 +63,7 @@
           </a>
         </li>
         <li class="btnNav">
-          <a href="#servicios">
+          <a href="./pages/servicios.html">
             <button class="buttonNavbar">servicios</button>
           </a>
         </li>
@@ -100,8 +100,14 @@
             Gracias por confiar en nosotros ¡Estamos encantados de poder
             ayudarte!
           </p>
+          <img
+            class="imgPortada"
+            src="./img/Portada/SallenavePortadaInmobiliaria.jpeg"
+            alt=""
+            srcset=""
+          />
           <!--acá inicia el formulario del inicio-->
-          <form action="">
+          <!-- <form action="">
             <div class="preguntarFormulario elejirOperacion">
               <p>¿Que operación queres realizar?</p>
               <select name="" id="">
@@ -131,23 +137,37 @@
                 <option value="4">Hasta U$D 200.000</option>
                 <option value="5">Todos</option>
               </select>
-            </div>
-            <!--Boton enviar del formulario de filtros del inicio-->
-            <input class="submit" type="submit" name="" id="" />
-          </form>
+            </div> -->
+          <!--Boton enviar del formulario de filtros del inicio-->
+          <!-- <input class="submit" type="submit" name="" id="" />
+          </form> -->
           <!--Boton para comercializar tu propiedad-->
+          <h2 class="tituloOperaciones">¿Que operación querés realizar?</h2>
+
           <a href="./pages/comercializar.html">
             <button class="buttonComercializaTuProp">
               Quiero comercializar mi propiedad
+            </button>
+          </a>
+
+          <a href="./pages/venta.html">
+            <button class="buttonComercializaTuProp sinMarginTopYBottom">
+              Quiero comprar un inmueble
+            </button>
+          </a>
+
+          <a href="./pages/alquiler.html">
+            <button class="buttonComercializaTuProp">
+              Quiero alquilar un inmueble
             </button>
           </a>
         </article>
       </section>
       <!--acá inicia seccion destacadas con 3 cards-->
       <h2 class="tituloDestacadas">Propiedades destacadas</h2>
-      <section class="destacadas">
+      <section class="contenedorCardsDestacadas">
         <!--Primera card-->
-        <article class="cardDestacada">
+        <!-- <article class="cardDestacada">
           <figure>
             <img
               src="./img/destacadas/TerrenoDestacado/TerrazasAlSur/TerrazasAlSur1.jpg"
@@ -156,12 +176,15 @@
           </figure>
           <div class="contenidoCard">
             <h3>Loteo</h3>
-            <p>Este loteo se destaca por su precio y ubicación estratégica</p>
+            <p>
+              "Terrazas al Sur" loteo que destaca por su precio y ubicación
+              estratégica
+            </p>
             <a href="#">ver más</a>
           </div>
-        </article>
+        </article> -->
         <!--Segunda card-->
-        <article class="cardDestacada">
+        <!-- <article class="cardDestacada">
           <figure>
             <img
               src="./img/destacadas/CasaDestacada/CasaCentroRios/CasaCentroCuatroHab1.jpg"
@@ -173,9 +196,9 @@
             <p>Esta casa destaca por su confort, su ubicación y su comodidad</p>
             <a href="#">ver más</a>
           </div>
-        </article>
+        </article> -->
         <!--Tercera card-->
-        <article class="cardDestacada">
+        <!-- <article class="cardDestacada">
           <figure>
             <img
               src="./img/destacadas/DepartamentoDestacado/DeptoAvUranga/DeptoAvUranga1.jpg"
@@ -184,10 +207,12 @@
           </figure>
           <div class="contenidoCard">
             <h3>Departamento</h3>
-            <p>Destacado por su modernización y su accesible precio</p>
+            <p>
+              Destacado por su elegante estilo moderno y su accesible precio
+            </p>
             <a href="#">ver más</a>
           </div>
-        </article>
+        </article> -->
       </section>
       <!--acá termina Destacadas e inicia la seccion Nosotros-->
       <!-- <a name="nosotros"></a>
@@ -239,7 +264,7 @@
         </p>
       </section> -->
       <!--acá termina Nosotros e inicia la seccion Servicios-->
-      <a name="servicios"></a>
+      <!-- <a name="servicios"></a>
       <h2 class="tituloSectionServicios">Servicios</h2>
       <section class="servicios">
         <div class="servicio">
@@ -265,7 +290,7 @@
           <img src="./iconos/servicios/6.png" class="imgServicios" alt="" />
           <h3 class="tituloCardServicio">Alquilamos propiedades</h3>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--acá inicia el footer-->
     <footer>
@@ -344,6 +369,7 @@
       </fieldset>
     </footer>
 
+    <script src="./js/destacadas.js"></script>
     <script src="./js/menuHamburguesa.js"></script>
     <script src="./js/script.js"></script>
     <script
